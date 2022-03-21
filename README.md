@@ -1,7 +1,7 @@
 # Link WhatsApp
 ## Inicie conversas no WhatsApp sem precisar salvar os contatos na sua agenda.
 
-Basta inserir o número de telefone com o qual deseja conversar e dar enter, ou clicar no botão indicado.
+Basta inserir o número de telefone com o qual deseja conversar e apertar "Enter", ou clicar no botão indicado.
 Em seguida abrirá a pagina com o link da API do WhatsApp para iniciar conversas.
 
 Em smartphones, após clicar no botão inidcado, o aplicativo do WhatsApp abrirá automaticamente para iniciar uma conversa com o número de telefone digitado.
