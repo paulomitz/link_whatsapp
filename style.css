@@ -1,0 +1,76 @@
+body {
+  background-color: #34af23;
+  background-image: url(https://cdn.pixabay.com/photo/2015/08/03/13/58/soon-873316_960_720.png);
+  background-size: 10%;
+  background-position: center;
+  background-position-y: 350px;
+  background-repeat: no-repeat;
+}
+
+div {
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+h1 {
+  padding: 0 8px;
+  color:white;
+}
+
+h2 {
+  padding: 0 8px;
+  color:white;
+}
+
+p {
+  padding: 0 8px;
+  color:white;
+  font-size: 20px;
+}
+
+input {
+  height: 35px;
+  width: 210px;
+  padding-left: 10px;
+  border-color: #000000;
+  border-radius:10px;
+  border-color: #000000;
+}
+
+button {
+  height: 45px;
+  width: 260px;
+  padding: 0px 7px 0px 7px;
+  background-color: #FF0000;
+  border-color: #000000;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-size: 20%;
+    background-position: center;
+    background-position-y: 470px;
+  }
+  h1 {
+    padding: 0 8px;
+    font-size: 30px;
+  }
+  h2 {
+    padding: 0 8px;
+    font-size: 22px;
+  }
+  p {
+    padding: 0 8px;
+  }
+}
+
+footer {
+  color: #FFFFFF;
+  font-size: 18px;
+  position: relative;
+  top: 550px;
+  text-align: center;
+}
