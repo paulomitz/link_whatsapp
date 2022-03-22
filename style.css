@@ -1,6 +1,6 @@
 body {
   background-color: #34af23;
-  background-image: url(logo_telefone.png);
+  background-image: url("logo_telefone.png");
   background-size: 10%;
   background-position: center;
   background-position-y: 350px;
