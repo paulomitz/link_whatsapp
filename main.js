@@ -6,13 +6,7 @@ function iniciarConversa() {
 
 var numeroWhatsapp = document.querySelector(".telefone");
 
-var enviar = document.querySelector(".enviar");
-enviar.onclick = iniciarConversa;
+var criarLink = document.querySelector(".enviar");
+criarLink.onclick = iniciarConversa;
 
-document.addEventListener("keypress", function(e) {
-  if(e.key === 'Enter') {
 
-    var btn = document.querySelector(".enviar");
-    btn.click();
-  }
-});
