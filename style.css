@@ -1,86 +1,98 @@
 body {
-  background-color: #34af23;
-  background-image: url("logo_telefone.png");
-  background-size: 10%;
-  background-position: center;
-  background-position-y: 350px;
-  background-repeat: no-repeat;
+  background: #34af23;
 }
 
-div {
-  padding-top: 10px;
+main {
+  width: 940px;
+  margin: 0 auto;
   text-align: center;
-
 }
 
-h1 {
-  padding: 0 8px;
-  color:white;
-}
-
-h2 {
-  padding: 0 8px;
+h1, h2 {
   color:white;
 }
 
 p {
-  padding: 0 8px;
   color:white;
   font-size: 20px;
 }
 
-input {
-  height: 35px;
-  width: 210px;
-  padding-left: 10px;
-  border-color: #000000;
-  border-radius:10px;
-  border-color: #000000;
-}
-
-button {
-  height: 45px;
-  width: 260px;
-  padding: 0px 7px 0px 7px;
-  background-color: #FF0000;
-  border-color: #000000;
+.telefone {
+  display: block;
+  width: 20%;
+  padding: 10px 10px;
+  border: 2px solid #000000;
   border-radius: 10px;
-  color: #FFFFFF;
+  margin: 2em auto 0;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    background-size: 20%;
-    background-position: center;
-    background-position-y: 470px;
-  }
-  h1 {
-    padding: 0 8px;
-    font-size: 30px;
-  }
-  h2 {
-    padding: 0 8px;
-    font-size: 22px;
-  }
-  p {
-    padding: 0 8px;
-  }
-  em {
-    position: relative;
-    top: -350px;
-  }
+.enviar {
+  display: block;
+  width: 20%;
+  padding: 10px 10px;
+  background: #FF0000;
+  color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin: 2em auto;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.1);
+}
+
+main img {
+  margin: 3em 0 7em;
+  width: 10%;
 }
 
 footer {
+  width: 940px;
+  margin: 0 auto;
   color: #FFFFFF;
-  padding-bottom: 15px;
-  position: relative;
-  top: 550px;
   text-align: center;
 }
 
-img {
+ footer img {
   height: 32px;
   width: 32px;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 480px) {
+  main, footer {
+    width: 80%;
+    margin: 0 10%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  
+  .telefone {
+    width: 80%;
+  }
+  
+  .enviar {
+    width: 60%;
+  }
+  
+  main img {
+    width: 20%;
+    margin: 2em 0;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  footer img {
+    width: 24px;
+    height: 24px;
+  }
 }
