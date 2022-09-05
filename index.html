@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="imagem/png" href="logo_telephone_whatsapp_icon.png" />
 		<link rel="stylesheet" href="style.css">
-		<script src="main.js"></script>
 	</head>
 	<body>
 		<main>
@@ -16,6 +15,26 @@
 			<input type="tel" class="telefone" placeholder="11999999999">
 			<button class="enviar">Criar Link para o WhatsApp</button>
 			<img src="logo_telefone.png">
+			<script>
+				function iniciarConversa() {
+					window.open("https://api.whatsapp.com/send?phone=55" + numeroWhatsapp.value, "_blank");
+					numeroWhatsapp.value = "";
+					numeroWhatsapp.focus();
+				}
+
+				var numeroWhatsapp = document.querySelector(".telefone");
+
+				var criarLink = document.querySelector(".enviar");
+				criarLink.onclick = iniciarConversa;
+
+				document.addEventListener("keypress", function(e) {
+  				if(e.key === 'Enter') {
+
+   				var btn = document.querySelector(".enviar");
+    			btn.click();
+ 				}
+				});
+			</script>
 		</main>
 		<footer>
 			<p><em>Created by Paulo José Mitz&ensp;</em><a href="https://www.instagram.com/paulomitz" target="_blank"><img src="https://paulomitz.github.io/link_whatsapp/logo_insta.png"></a></p>
