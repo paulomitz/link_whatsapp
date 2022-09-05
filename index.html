@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 	<head>
 		<title>Link WhatsApp</title>
 		<meta charset="UTF-8">
@@ -8,43 +7,17 @@
 		<link rel="icon" type="imagem/png" href="logo_telephone_whatsapp_icon.png" />
 		<link rel="stylesheet" href="style.css">
 	</head>
-
 	<body>
-
-		<div>
+		<main>
 			<h1>Inicie conversas no WhatsApp sem precisar salvar os contatos na sua agenda.</h1>
 			<h2>Digite o número de contato com DDD</h2>
 			<p>Inserir os números sem espaços ex: 11999999999</p>
-			<input type="text" placeholder="11999999999"><br><br>
-			<button>Clique para criar Link para o WhatsApp</button>
-		</div>
-
-		<script>
-
-			var numeroWhats = document.querySelector("input");
-
-			function iniciarConversa() {
-
-				window.open("https://api.whatsapp.com/send?phone=55" + numeroWhats.value, "_blank");
-				numeroWhats.value = "";
-				numeroWhats.focus();
-
-				}
-
-				document.addEventListener("keypress", function(e) {
-					if(e.key === 'Enter') {
-
-						var btn = document.querySelector("button");
-						btn.click();
-					}
-				});
-
-			var button = document.querySelector("button");
-			button.onclick = iniciarConversa;
-
-		</script>
+			<input type="tel" class="telefone" placeholder="11999999999">
+			<input type="submit" value="Criar Link para o WhatsApp" class="enviar">
+			<img src="https://paulomitz.github.io/link_whatsapp/logo_telefone.png">
+		</main>
 		<footer>
-			<p><em>Created by Paulo José Mitz&ensp;</em><a href="https://www.instagram.com/paulomitz" target="_blank"><img src="logo_insta.png"></a></p>
+			<p><em>Created by Paulo José Mitz&ensp;</em><a href="https://www.instagram.com/paulomitz" target="_blank"><img src="https://paulomitz.github.io/link_whatsapp/logo_insta.png"></a></p>
 		</footer>
 	</body>
 </html>
