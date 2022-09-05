@@ -6,6 +6,9 @@ function iniciarConversa() {
 
 var numeroWhatsapp = document.querySelector(".telefone");
 
+var criarLink = document.querySelector(".enviar");
+criarLink.onclick = iniciarConversa;
+
 document.addEventListener("keypress", function(e) {
   if(e.key === 'Enter') {
 
@@ -13,6 +16,3 @@ document.addEventListener("keypress", function(e) {
     btn.click();
   }
 });
-
-var criarLink = document.querySelector(".enviar");
-criarLink.onclick = iniciarConversa;
