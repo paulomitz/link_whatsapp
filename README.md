@@ -13,7 +13,3 @@ Atencão: Está aplicação está configurada somente para números de telefones
 ![image](https://user-images.githubusercontent.com/82454884/159348115-ed42df16-40b2-4713-9d3a-13690f0e7910.png)
 
 ** Está aplicação não possui nenhum vínculo com o WhatsApp ou a Meta. Seu objetivo é somente facilitar o dia a dia de quem usa o aplicativo Whatsapp.
-
-## License:
-
-Licensed under the GPLv3+: http://www.gnu.org/licenses/gpl-3.0.html.
