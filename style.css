@@ -26,7 +26,7 @@ p {
   margin: 2em auto 0;
 }
 
-.enviar {
+.botao {
   display: block;
   width: 20%;
   padding: 10px 10px;
@@ -39,7 +39,7 @@ p {
   transition: 1s all;
 }
 
-.enviar:hover {
+.botao:hover {
   background: darkorange;
   transform: scale(1.1);
 }
